@@ -33,6 +33,4 @@ int main(){
 
     cout<<"Clave: ";cin>>clave;
     cout<<"LLave: "<<Llave(clave);
-
-
 }
