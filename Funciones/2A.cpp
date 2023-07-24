@@ -12,36 +12,45 @@ Notas:
 El código debe ser eficiente. Debe tener un numero mínimo de instrucciones (líneas de código)
 Las entradas de codigo (input) deben estar claramente especificadas
 El estudiante decide el formato de salidas de código (output)
-Considere la rúbrica del ejercicio (en Canvas)
- 
-*/
+Considere la rúbrica del ejercicio (en Canvas)*/
 
 #include "iostream"
+
 using namespace std;
+
 int main(){
     int opcion,contador = 0;
-    float dineroTotal_Inicial = 1000,dineroTotal_Final = dineroTotal_Inicial,dineroDepositar,dineroRetirar;   
+    float dineroTotal_Inicial = 1000,dineroTotal_Final = dineroTotal_Inicial,dineroDepositar,dineroRetirar; 
+
     while(contador < 6){
+        
         cout<<"Menu----------"<<endl;
         cout<<"1) Depositar"<<endl;
         cout<<"2) Retirar"<<endl;
         cout<<"3) Salir"<<endl;
         cout<<"Opcion a elegir: ";cin>>opcion;
         cout<<"--------------"<<endl;
+
         if(opcion == 1){
+
             do{
                 cout<<"Monto a depositar: ";cin>>dineroDepositar; 
             }while(dineroDepositar > 3000   ||  dineroDepositar < 0);  
+
             dineroTotal_Final += dineroDepositar;                    
-            contador += 1;
+            contador += 1;            
         }
+
         if(opcion == 2){
+
             do{
                 cout<<"Monto a retirar: ";cin>>dineroRetirar;
             } while (dineroRetirar > 3000   ||  dineroRetirar < 0  ||  dineroRetirar > dineroTotal_Final);
+
             dineroTotal_Final -= dineroRetirar;         
             contador += 1;      
         }
+
         if(opcion == 3  || contador > 5){
             cout<<"--------------"<<endl;
             cout<<"Monto inicial: "<<dineroTotal_Inicial<<endl;
