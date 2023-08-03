@@ -11,7 +11,7 @@ void FuncionA(string s1,string s2, string s3, string s4){
     delete palabra_ptr;
 }
 
-void FuncionB(string s1,string s2, string s3, string s4){
+void FuncionB(string s1,string s2,   string s3, string s4){
 
     string palabra1, palabra2, palabra3, palabra4, palabra5, palabra6;
 
