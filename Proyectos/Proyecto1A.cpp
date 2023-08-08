@@ -83,7 +83,7 @@ int main(){
     camisasFranela_ptr = nullptr;
     polosJersey_ptr = nullptr;
     camisasJersey_ptr = nullptr;
-
+    
 
 
     
